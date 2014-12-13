@@ -19,8 +19,10 @@ class DefaultController extends Controller {
      * Welcome controller.
      *
      * @Route("/" , name="dashboard_index")
+     *  * @Method("GET")
+     * @Template()
      */ public function indexAction() {
-        return $this->render('Map2uDashboardBundle:Default:index.html.twig',array( 'admin_pool' => $this->container->get('sonata.admin.pool')));
+        return array('admin_pool' => $this->container->get('sonata.admin.pool'));
     }
 
 }

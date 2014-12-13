@@ -19,7 +19,7 @@ class DefaultController extends Controller {
      * Welcome controller.
      *
      * @Route("/" , name="dashboard_index")
-     *  * @Method("GET")
+     * @Method("GET")
      * @Template()
      */ public function indexAction() {
         return array('admin_pool' => $this->container->get('sonata.admin.pool'));

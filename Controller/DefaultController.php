@@ -21,8 +21,16 @@ class DefaultController extends Controller {
      * @Route("/" , name="dashboard_index")
      * @Method("GET")
      * @Template()
-     */ public function indexAction() {
-        return array('admin_pool' => $this->container->get('sonata.admin.pool'));
+     */ public function indexAction(Request $request) {
+
+        $locale = $request->attributes->get('_locale', $request->getLocale());
+        if ($locale == $request->attributes->get('_locale')) {
+            $request->getSession()->set('_locale', $locale);
+        } else {
+            // if no explicit locale has been set on this request, use one from the session
+            $request->setLocale($request->getSession()->get('_locale', $locale)); //$this->defaultLocale));
+        }
+        return array('_locale' => $locale, 'admin_pool' => $this->container->get('sonata.admin.pool'));
     }
 
 }

@@ -1,0 +1,7 @@
+parameters:
+#    map2u_dashboard.example.class: Map2u\DashboardBundle\Example
+
+services:
+#    map2u_dashboard.example:
+#        class: %map2u_dashboard.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,31 @@
+{
+  "name" : "map2u/dashboard-bundle",
+    "description" : "Map2u DashboardBundle",
+    "version": "1.0.0",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "Joseph Zhao",
+        "email" : "zhaoshuilin2004@yahoo.ca"
+    }],
+    "keywords" : [
+        "Map2u DashboardBundle,Symfony 2"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "require" : {
+    },
+    "autoload" : {
+        "psr-0" : {
+            "Map2u\\DashboardBundle" : ""
+        }
+    },
+    "target-dir" : "Map2u/DashboardBundle",
+    "repositories" : [{}
+    ],
+    "extra" : {
+    "branch-alias" : {
+            "dev-master" : "2.4-dev"
+        }
+    }
+}

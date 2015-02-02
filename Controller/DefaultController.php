@@ -18,7 +18,7 @@ class DefaultController extends Controller {
     /**
      * Welcome controller.
      *
-     * @Route("/" , name="dashboard_index")
+     * @Route("/" , name="user_dashboard_index")
      * @Method("GET")
      * @Template()
      */ public function indexAction(Request $request) {

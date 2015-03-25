@@ -2,5 +2,5 @@
 map2u_dashboard_controller:
     resource: "@Map2uDashboardBundle/Controller/"
     type: annotation
-    prefix: /{_locale}/profile
+    prefix: /{_locale}
     
